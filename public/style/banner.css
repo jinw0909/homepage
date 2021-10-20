@@ -84,6 +84,13 @@
   background-repeat: no-repeat;
   border: 0;
 }
+.slide-1 .slide-img {
+  background-image: url("../images/cosmetic-logo.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+}
 .slide-title {
   font-size: 4rem;
   transform: translateX(-10%);
