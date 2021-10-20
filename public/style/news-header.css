@@ -1,0 +1,189 @@
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    /* background: radial-gradient(ellipse farthest-side at center top, #283244 50%, rgba(21,26,35,0.9) 100%); */
+    background: radial-gradient(ellipse farthest-side at center top, #E0B589 0%, rgba(154, 139, 79, 0.9) 100%);
+}
+header {
+    width: 100%;
+    /* height: 3.5rem; */
+    background: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.main-nav-item-news {
+    text-shadow: 0 0 15px #fff, 0 0 30px hsl(0deg 0% 100% / 30%);
+    color: #fff;
+}
+/* news nav */
+.news-nav {
+    padding: 0 2.5rem;
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+}
+.news-nav-dropdown {
+    width: 280px;
+    position: relative;
+    z-index: 10;
+}
+.news-nav-dropdown-select {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 0;
+    background: transparent;
+    color: hsla(0,0%,100%,.7);
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.news-nav-dropdown-select.selected {
+    color: #00aeff;
+}
+.news-nav-icon {
+    position: relative;
+    right: auto;
+    top: 0;
+    margin-left: 5px;
+    top: -1px;
+    -ms-transform: none;
+    transform: none;
+    color: hsla(0,0%,100%,.25);
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    transition: color .2s,background-color .2s,border-color .2s;
+}
+.news-nav-icon.hidden {
+    display: none;
+}
+.news-nav-icon svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    fill: currentColor;
+    pointer-events: none;
+}
+.news-nav-dropdown-content {
+    width: 260px;
+    left: 0;
+    background-color: #272e3b;
+    box-shadow: inset 0 0 0 1px #3d434f, 0 5px 10px rgb(0 0 0 / 80%);
+    height: 350px;
+    min-width: 100%;
+    border-radius: 0;
+    border: 1px solid #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1px;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+}
+.news-nav-dropdown-content.show {
+    display: block;
+}
+.wheel {
+    height: 100%;
+    min-width: 100%;
+    position: relative;
+    overflow-x: visible;
+    box-sizing: border-box;
+    display: block;
+}
+.scrollbar {
+    height: 346px;
+    border: transparent;
+    background: linear-gradient(90deg, rgba(39,46,59,.5),#272e3b,#272e3b);
+    width: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 2px;
+}
+.nav-dropdown-viewport {
+    height: 100%;
+    min-width: 100%;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.nav-dropdown-viewport::-webkit-scrollbar {
+    width: 1em;
+  }
+.nav-dropdown-viewport::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+.nav-dropdown-viewport::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    line-height: 2rem;
+    font-size: .9rem;
+    color: hsla(0,0%,100%,.8);
+}
+.nav-dropdown-item:hover {
+    background-color: hsla(0,0%,100%,.05);
+    color: #fff;
+    z-index: 1;
+}
+.nav-dropdown-item:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-dropdown-icon {
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    border: 0;
+    color: hsla(0,0%,100%,.8);
+}
+.nav-dropdown-icon svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    fill: currentColor;
+    pointer-events: none;
+}
+.nav-dropdown-text {
+    color: hsla(0,0%,100%,.8);
+    display: block;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    margin-left: -44px;
+    margin-right: -17px;
+    padding-left: 44px;
+    padding-right: 17px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition: color .2s;
+    cursor: pointer;
+    line-height: 2rem;
+}
+.seperator {
+    border-top: 1px solid hsla(0,0%,100%,.15);
+}
+.jpg-icon {
+    width: 14px;
+    height: 14px;
+    background: #00aeff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,110 @@
+.news {
+    position: relative;
+}
+.news-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.news-background:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    pointer-events: none;
+    z-index: 1;
+}
+.news-wrapper {
+    width: 90vw;
+    margin: auto;
+}
+.news-container > h1 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+.news-list {
+    overflow: hidden;
+}
+.news-item {
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+    box-sizing: border-box;
+}
+.news-item:first-child {
+    border-top: 1px solid hsla(0,0%,100%,.15);
+}
+.news-item > a {
+    display: flex;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+/* .news-image {
+    padding: 0.5rem 0;
+} */
+.news-img {
+    width: 200px;
+    height: 100px;
+    background: #fff;
+}
+.news-content {
+    flex: 1;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+.news-content-subtitle {
+    font-size: 0.75rem;
+    color: hsla(0,0%,100%,.55);
+}
+.news-content-title {
+    font-size: 1.25rem;
+    color: #fff;
+    line-height: 1.4;
+}
+.news-content-desc {
+    font-size: 0.75rem;
+    color: hsla(0,0%,100%,.55);
+    line-height: 1.6;
+}
+.news-content-timestamp {
+    font-size: 0.75rem;
+    color: hsla(0,0%,100%,.55);
+    line-height: 1.6;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.more > button {
+    display: inline-block;
+    position: relative;
+    background-color: #0e86ca;
+    border: 1px solid #00aeff;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color .2s,background-color .2s,border-color .2s;
+}
+.more > button:hover {
+    background-color: #00aeff;
+    border: 1px solid #00aeff;
+    color: #fff;
+}
+
+
+

@@ -1,0 +1,86 @@
+/* section article */
+.article {
+    width: 60vw;
+    margin: auto;
+    margin-top: 4rem;
+}
+.article-sub-title {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.article-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #333;
+}
+.article-detail {
+    margin-top: 1rem;
+}
+.article-detail-left {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.article-detail-left > span:nth-child(1) {
+    color: #B55A30;
+    margin-right: 10px;
+    font-size: .9rem;
+}
+.article-detail-left > span:nth-child(2) {
+    color: #333;
+    font-size: 0.9rem;
+}
+.article-detail-left {
+    display: inline-block;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    border-right: 1px solid hsla(0,0%,100%,.15);
+}
+.article-detail-right {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.social-media-links {
+    display: inline-block;
+}
+.social-media-icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 6px;
+}
+.social-media-icon svg {
+    top: 0;
+    left: 0;
+    color: #0072B5;
+    fill: currentColor;
+    font: inherit;
+}
+.article-image {
+    height: 40vw;
+    border: 1px solid #B55A30;
+    margin: 3rem 0;
+    background-image: url("../images/pokemon-news.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* section blog */
+.blog {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+.blog-container > p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+.blog-title {
+    text-align: center;
+    font-weight: bold;
+} 

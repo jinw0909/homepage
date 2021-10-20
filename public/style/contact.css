@@ -1,0 +1,159 @@
+.contact {
+  width: 100%;
+  background: #282C34;
+  position: relative;
+}
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  min-height: 200px;
+}
+.contact-wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.contact-wrapper h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,.8);
+  font-weight: 300;
+}
+.contact-wrapper a {
+  display: inline-block;
+  position: relative;
+  background-color: #0072B5;
+  border: solid 1px #9BB7D4;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+/* slideshow */
+.contact-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mySlides:nth-child(1) {
+  background: #333;
+}
+.mySlides:nth-child(2) {
+  background: #555;
+}
+.mySlides:nth-child(3) {
+  background: #111;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: opacity 3s;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} */
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 0}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 0}
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 4rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 auto;
+    padding: 4rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 60vw;
+  }
+  .contact-wrapper h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  .contact-wrapper h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,.8);
+    font-weight: 300;
+  }
+  .contact-wrapper a {
+    display: inline-block;
+    position: relative;
+    background-color: #006fb2;
+    border: solid 1px #00aeff;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {}

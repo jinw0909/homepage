@@ -1,0 +1,165 @@
+.site {
+  display: flex;
+  width: 100%;
+  background: #0072B5;
+}
+.site-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem 0;
+}
+.site-heading {
+  display: flex;
+  justify-content: space-between;
+  max-width: 612px;
+  align-items: baseline;
+  font-family: 'Noto-sans KR', sans-serif;
+  margin: 0.5rem 0.75rem;
+}
+.site-heading h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.site-heading a {
+  text-decoration: none;
+  color: #fff;
+}
+.site-content {
+  max-width: 612px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-item {
+  width: 180px;
+  height: 240px;
+  background: #ddd;
+  margin: 0.75rem;
+  position: relative;
+}
+.site-item .cardlink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+.site-item:nth-child(1) .cardlink{
+  background-image: url("../images/pokemon_card.png");
+  background-size: cover;
+  background-position: center center;
+}
+.site-item .cardlink .card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: bottom center;
+  background-size: cover;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 10%);
+}
+.site-item .cardlink::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(255,255,255,.2);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* effects */
+.cardlink:not(:hover) {
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-duration: 500ms;
+}
+.cardlink:hover {
+  transition: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 100ms;
+  -webkit-filter: brightness(115%) contrast(90%);
+  filter: brightness(115%) contrast(90%);
+  transform: scale(1.05);
+}
+.cardlink:hover::after {
+  border-color: rgba(155, 183, 212,.5);
+}
+
+@media only screen and (min-width: 1200px) {
+  .site-heading {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    align-items: baseline;
+    font-family: 'Noto-sans KR', sans-serif;
+    margin: 0.5rem 0.75rem;
+  }
+  .site-content {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-item {
+    width: 210px;
+    height: 280px;
+    background: #ddd;
+    margin: 0.75rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .site-heading {
+    display: flex;
+    justify-content: space-between;
+    max-width: 408px;
+    align-items: baseline;
+    font-family: 'Noto-sans KR', sans-serif;
+    margin: 0.5rem 0.75rem;
+  }
+  .site-heading h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .site-content {
+    max-width: 408px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-item {
+    width: 180px;
+    height: 240px;
+    background: #ddd;
+    margin: 0.75rem;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .site-heading {
+    display: flex;
+    justify-content: space-between;
+    max-width: 316px;
+    align-items: baseline;
+    font-family: 'Noto-sans KR', sans-serif;
+    margin: 0.5rem 0.75rem;
+  }
+  .site-heading h2 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .site-content {
+    max-width: 316px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-item {
+    width: 150px;
+    height: 200px;
+    background: #ddd;
+    margin: 0.25rem;
+    position: relative;
+  }
+}
