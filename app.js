@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 const ejs = require('ejs');
 
 const app = express();
-app.set('port', process.env.PORT || 3005);
+app.set('port', process.env.PORT || 8080);
 // app.set('view engine', 'html');
 // app.set('views', __dirname + 'public');
 
