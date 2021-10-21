@@ -42,7 +42,10 @@
   /* background: rgba(233, 212, 96, 1); */
 }
 .slide:nth-child(2) .slide-background {
-  background: #eee;
+  background-image: url("../images/cosmetic-banner.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .slide:nth-child(3) .slide-background {
   background: #fff;
@@ -89,7 +92,10 @@
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  border: 1px solid gray;
+  border: 0;
+  backdrop-filter: saturate(100%) blur(8px);
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 4px;
 }
 .slide-title {
   font-size: 4rem;
