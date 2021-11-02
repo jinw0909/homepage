@@ -114,6 +114,11 @@
   width: 60vw;
   height: 60vh;
 }
+.spec-modal-container > b {
+  margin-right: 1rem;
+  width: 4em;
+  display: inline-block;
+}
 .contact-modal {
   top: 35%;
   width: 60vw;

@@ -53,6 +53,9 @@ app.get("/main/jp", (req, res) => {
 app.get('/news', (req, res) => {
     res.sendFile(__dirname + '/views/news.html');
 })
+app.get('/news_detail', (req, res) => {
+    res.sendFile(__dirname + '/views/news_detail.html');
+})
 
 app.use((req, res, next) => {
     const error = new Error(`${req.method} ${req.url} 라우터가 없습니다.`)
